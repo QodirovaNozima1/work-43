@@ -10,7 +10,8 @@ import Catalog from './router/catalog/Catalog'
 import Contact from './router/contact/Contact'
 import { Routes,Route } from "react-router-dom"
 import Dostafka from './router/dostafka/Dostafka'
-import Uslogiya from './router/uslogiya/Uslogiya'
+import NotFound from './router/notfound/NotFound'
+import Detail from './router/detail/Detail'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,9 +24,12 @@ function App() {
       <Route path='/catalog' element={<Catalog/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/dostafka' element={<Dostafka/>}/>
-      <Route path='/uslogiya' element={<Uslogiya/>}/>
+      <Route path='/product/:id' element={<Detail/>}/>
+     <Route path='/admin/*' element={<Admin/>}/>
+      <Route path='create' element={<CreateProducts/>}/>
+     </Routes>
+      <Route path='*' element={<NotFound/>}/>
     </Routes>
-    <Footer/>
     </>
   )
 }

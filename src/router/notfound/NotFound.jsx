@@ -1,7 +1,11 @@
 import React from 'react'
 import Error from '../../components/error/Error'
 
-const Uslogiya = () => {
+const NotFound = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+},[])
+
   return (
     <div>
         <Error/>
@@ -9,4 +13,4 @@ const Uslogiya = () => {
   )
 }
 
-export default Uslogiya
+export default NotFound

@@ -3,6 +3,7 @@ import "./Product.css";
 import { LiaCartPlusSolid } from "react-icons/lia";
 import { PiSpinnerBold } from "react-icons/pi";
 import axios from 'axios'
+import { Link } from 'react-router-dom';
 const API_URL = "https://dummyjson.com"
 const Product = () => {
   
@@ -13,6 +14,8 @@ const Product = () => {
     const [total, setTotal] = useState(0)
     const [onset, setOnset] = useState(1)
     const limit = 4
+
+
 
     useEffect(()=>{
         axios
@@ -50,7 +53,9 @@ const Product = () => {
 
     const productItem = products?.map((product) => (
         <div key={product.id} className='w-72 p-3 api flex flex-col gap-4 items-center justify-center rounded-lg  relative overflow-hidden'>
+            <Link to = {`/product/${product.id}`}>
             <img src={product.images[0]} alt="" className='w-full h-52 object-contain hover:scale-105 ' />
+            </Link>
             <div className='flex flex-col gap-2 '>
                 <h3 className='text-center text-xl font-semibold'>{product.brand}</h3>
                 <p className='text-red-500 text-sm font-medium ml-2'>12%</p>

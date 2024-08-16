@@ -12,6 +12,10 @@ import { Routes,Route } from "react-router-dom"
 import Dostafka from './router/dostafka/Dostafka'
 import NotFound from './router/notfound/NotFound'
 import Detail from './router/detail/Detail'
+import Admin from './router/admin/Admin'
+import Manage from './router/admin/Manage'
+import Login from './router/login/Login'
+import Name from './router/admin/Name'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,11 +29,14 @@ function App() {
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/dostafka' element={<Dostafka/>}/>
       <Route path='/product/:id' element={<Detail/>}/>
-     <Route path='/admin/*' element={<Admin/>}/>
-      <Route path='create' element={<CreateProducts/>}/>
-     </Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/admin" element={<Admin />}>
+          <Route path="manage" element={<Manage />}></Route>
+          <Route path="name" element={<Name />}></Route>
+        </Route>
       <Route path='*' element={<NotFound/>}/>
     </Routes>
+    <Footer/>
     </>
   )
 }

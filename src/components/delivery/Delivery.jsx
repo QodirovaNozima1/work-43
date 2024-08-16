@@ -4,7 +4,7 @@ import img2 from '../../assets/boy2.png'
 
 const Delivery = () => {
     return (
-        <div className="container w-10/12">
+        <div className="container w-10/12 mt-28">
           <p className="text-[36px] text font-[700] mt-[-100px] mb-11">Доставка</p>
           <div className="grid gap-8 grid-cols-1  sm:grid-cols-1 md:grid-cols-1  lg:grid-cols-2 mb-11">
             <div className="flex flex-col gap-7  sm:gap-5 sm:text-[15px] md:text-[16px]">

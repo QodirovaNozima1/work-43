@@ -4,7 +4,7 @@ import hero from "../../assets/image 34.png"
 const Hero = () => {
     return (
         <div className='hero'>
-            <div className='container mx-auto'>
+            <div className='container mx-auto mt-6'>
                 <div className="hero__wrapper flex gap-4 box ">
                     <div className="hero__box  border p-14 shadow-xl flex flex-col gap-7 hero">
                         <p className='max-w-80 font-bold text-5xl'>Мебель на любой вкус!</p>

@@ -98,7 +98,7 @@ const list = [
   ];
   const Advertising = () => {
     return (
-      <div className="container w-10/12">
+      <div className="container w-10/12 mt-6">
         <p className="text-[36px] text font-[700] mt-[-100px] mb-11">Каталог</p>
         <div className="grid gap-5 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-12 items-center justify-center ">
           {list?.map((el) => (

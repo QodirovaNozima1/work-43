@@ -64,7 +64,7 @@ const box = [
 ]
 const Category = () => {
     return (
-    <div className='category'>
+    <div className='category mt-6'>
          <div className='container w-5/7'>
             <div className='flex flex-col md:flex-row gap-5 text-center md:items-end mb-5 md:mb-10'>
             <p className='text-2xl md:text-4xl font-bold info'>Популярные категории</p>

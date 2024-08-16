@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Error = () => {
   const navigate = useNavigate();
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mt-6">
       <div className="flex mr-auto flex-col gap-6 items-center mb-4">
         <h2 className="text-[68px] font-[600]">404</h2>
         <p>Sahifa topilmadi</p>

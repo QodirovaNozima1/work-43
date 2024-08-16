@@ -2,9 +2,9 @@ import React from 'react'
 import Advertising from '../../components/advertising/Advertising'
 
 const Catalog = () => {
-  useEffect(()=>{
-    window.scrollTo(0,0)
-},[])
+//   useEffect(()=>{
+//     window.scrollTo(0,0)
+// },[])
 
 
   return (

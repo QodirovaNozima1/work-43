@@ -2,9 +2,9 @@ import React from 'react'
 import Error from '../../components/error/Error'
 
 const NotFound = () => {
-  useEffect(()=>{
-    window.scrollTo(0,0)
-},[])
+//   useEffect(()=>{
+//     window.scrollTo(0,0)
+// },[])
 
   return (
     <div>

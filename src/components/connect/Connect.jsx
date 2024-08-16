@@ -7,7 +7,7 @@ import { IoLogoGoogleplus } from "react-icons/io";
 
 const Connect = () => {
     return (
-        <div className="container w-10/12">
+        <div className="container w-10/12 mt-28">
           <p className="text-[36px] text font-[700] mt-[-100px] mb-11">Контакты</p>
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start">
             <div className="">

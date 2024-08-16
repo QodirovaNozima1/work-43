@@ -22,7 +22,7 @@ const Header = () => {
           <div className={`nav__collect ${isMenuOpen ? "show" : ""}`}>
             <ul className="navbar__collection flex gap-7">
             <Link className={"text-[#323131] "} to={"/"}>
-                Home
+                Хоме
               </Link>
               <Link className={"text-[#323131] "} to={"/catalog"}>
                 Каталог
@@ -34,7 +34,7 @@ const Header = () => {
                 Условия
               </Link>
               <Link className={"text-[#323131] "}  to={"/login"}>
-              Login
+              Логин
               </Link>
              <Link className={"text-[#323131] "} to={"/contact"}>
                 Контакты
